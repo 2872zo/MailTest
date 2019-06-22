@@ -7,8 +7,8 @@ import javax.mail.search.FlagTerm;
 
 //MailAgent를 상송하여 IMAP 고유기능을 지원하는 클래스
 public class IMAPAgent extends MailAgent{
-	public IMAPAgent(String host, String id, String passwd) {  
-        super(new IMAP(), host, id, passwd);  
+	public IMAPAgent(String host, String port, String id, String passwd) {  
+        super(new IMAP(), host, port, id, passwd);  
     }  
       
     public Folder getFolder(String name) throws MessagingException {  
